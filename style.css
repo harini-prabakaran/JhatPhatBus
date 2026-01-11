@@ -298,7 +298,10 @@ body {
 
 .bus-card.active {
     border-color: var(--primary-color);
-    background: rgba(37, 99, 235, 0.05);
+}
+
+.bus-card.nearest {
+    border-left: 4px solid #156834;
 }
 
 .bus-card-header {
@@ -530,4 +533,18 @@ html {
 .btn:focus-visible, input:focus-visible, .swap-btn:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+.route-card.fastest {
+    border-left: 4px solid #16a34a;
+    background: rgba(22, 163, 74, 0.1);
+}
+
+.route-card.fastest::after {
+    content: "⚡ Fastest";
+    float: right;
+    font-weight: bold;
+    color: #16a34a;
+}
+#fastestRouteCard {
+    border-left: 4px solid #083418;
 }
