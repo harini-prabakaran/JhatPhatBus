@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JhatPhatBus</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚌 JhatPhatBus</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="search-section">
+                <div class="search-container">
+                    <div class="search-inputs">
+                        <div class="input-group">
+                            <label for="source">SOURCE 🟢 </label>
+                            <div class="input-wrapper">
+                                <input type="text" id="source" placeholder="Enter source location..." autocomplete="off">
+                                <div id="sourceDropdown" class="dropdown"></div>
+                            </div>
+                        </div>
+                        
+                        <button id="swapBtn" class="swap-btn" title="Swap locations">⇄</button>
+                        
+                        <div class="input-group">
+                            <label for="destination">DESTINATION 🔴</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="destination" placeholder="Enter destination..." autocomplete="off">
+                                <div id="destDropdown" class="dropdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button id="clearBtn" class="btn btn-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="map-section">
+                    <div id="map"></div>
+                </div>
+                
+                <aside class="sidebar">
+                    <div class="route-info">
+                        <h3>Route Information</h3>
+                        <div id="routeInfo" class="route-details">
+                            <p>Select source and destination to view route details</p>
+                        </div>
+                    </div>
+                    
+                    <div class="buses-section">
+                        <h2>Live Buses</h2>
+                        <div id="busesList" class="buses-list">
+                            <div class="loading">Loading buses...</div>
+                        </div>
+                    </div>
+                    
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; @JhaphatBus | made by harini prabakaran </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
