@@ -51,12 +51,46 @@
                 
                 <aside class="sidebar">
                     <div class="route-info">
-                        <h3>Route Information</h3>
+                        <h3>Nearest Route</h3>
                         <div id="routeInfo" class="route-details">
                             <p>Select source and destination to view route details</p>
                         </div>
                     </div>
-                    
+                    <div id="fastestRouteCard" class="route-info-card" style="display:none;">
+    <h3>⚡ Fastest Route</h3>
+
+    <div class="route-row">
+        <span>From:</span>
+        <strong id="fastestFrom">—</strong>
+    </div>
+
+    <div class="route-row">
+        <span>To:</span>
+        <strong id="fastestTo">—</strong>
+    </div>
+
+    <div class="route-row">
+        <span>Route:</span>
+        <strong id="fastestRouteName">—</strong>
+    </div>
+
+    <div class="route-row">
+        <span>Bus:</span>
+        <strong id="fastestBus">—</strong>
+    </div>
+
+    <div class="route-row">
+        <span>ETA:</span>
+        <strong id="fastestETA">—</strong>
+    </div>
+
+    <div class="route-row">
+        <span>Total Time:</span>
+        <strong id="fastestTime">—</strong>
+    </div>
+</div>
+
+
                     <div class="buses-section">
                         <h2>Live Buses</h2>
                         <div id="busesList" class="buses-list">
